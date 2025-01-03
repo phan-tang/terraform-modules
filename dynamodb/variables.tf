@@ -55,3 +55,19 @@ variable "environment" {
     error_message = "The environment must be either 'development', 'staging' or 'production'."
   }
 }
+
+variable "test_user" {
+  description = "The test user for the user table, username is admin123, password is Admin@123"
+  type        = any
+  default     = {
+    "user_id": "f02865f7-dd07-4fec-ac52-0617487de00b",
+    "first_name": "Admin",
+    "last_name": "System",
+    "username": "admin123",
+    "email": "admin123@email.com",
+    "password": "$2b$12$Aq9lVRCQXoqWBO6acBtZ1O1mcRBffpW5nxXtnoCthfALoOslqqTCS",
+    "user_type": "A",
+    "user_status": "A"
+  }
+}
+ 
